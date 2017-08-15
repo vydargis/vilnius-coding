@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="lt">
+  <head>
+    <meta charset="utf-8">
+    <title>Namu darbai</title>
+    <meta name="description" content="Namu darbai">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+      body {
+        box-sizing: border-box;
+        margin: 0 auto;
+        max-width: 50%;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: justify;
+      }
+
+      section {
+        margin-top: 30px;
+        background: #E8F1F8;
+        padding: 20px;
+      }
+
+    </style>
+    </head>
+    <body>
+
+    <section>
+
+      <form method="GET" action="http://www.manoserveris.lt/insert.php">
+      	<fieldset>
+      		<legend>Information</legend>
+      			Name:<input type="text" name="name" required placeholder="Your name"><br>
+      			Surname:<input type="text" name="name" required placeholder="Your surname">
+      	</fieldset>
+
+      	<fieldset>
+      		<legend>Summary</legend>
+      			Lorem ipsum dolor sit amet?
+      			<select>
+      				<option value="google">Google</option>
+      				<option value="Facebook">Facebook</option>	
+      				<option value="linkedin">Linkedin</option>		
+      			</select>
+      			Lorem ipsum dolor sit amet?<br>
+      			Yes<input type="radio" name="btn" value="yes">
+      			No<input type="radio" name="btn" value="no">
+      			Maybe<input type="radio" name="btn" value="maybe"><br>
+      			Comments:<br><textarea></textarea><br>
+      			Subscribe<input type="checkbox" name="btn" value="maybe"><br>
+      			<input type="submit" name="submit" value="Send">
+      	</fieldset>
+      </form>
+
+    </section>
+
+  </body>
+</html>

@@ -1,0 +1,14 @@
+// Atsizvelgsiu i pastabas. 
+
+------
+1. Puikiai. Tik matau, kad html kaþkur generuotas, reikëtø iðimti stilius, nes tikslas dar nëra stiliai.
+2. Uþduoties pavyzdyje taip pat buvo naudojamas trumpinys DNR, kuriam reikëtø
+naudoti <abbr> elementà. 2 paskaitos 6 skaidrëje rasite daugiau apie teksto semantikà. Galima panaudoti tokius elementus kaip: <abbr>, <acronym>, <cite>, <q>, <strong> ir panaðiai kai norime daugiau iðskirti ne vartotojui, SEO (Search Engine Optimization). Matau nepanaudtoas nei vienas semantinis elementas.
+3. Puikiai
+4. Nuotraukos ákeltos - puiku. Taèiau kai yra tekstas po nuotrauka (ar kitu objektu) naudojame elementus <figure> ir <figcaption> https://www.w3schools.com/tags/tag_figcaption.asp
+5. Su skaièiuotuvu negerai. Lentelë yra, bet mygtukai turëjo bûti formos lementai.
+6. Labai gerai. Tik elementø iðdëstymas po <legend> elemento eina vienoje linijoje.
+7. Puikiai
+8. Puikiai
+9. Labai gerai. Uþduotyje praðoma buvo visos ðaðkiø lentos, o parodytas fragmentas. Bet OK.
+10. Puikiai
