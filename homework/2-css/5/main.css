@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
-  body {
+
+html {
+  background: #ffefec;
+}
+
+body {
   box-sizing: border-box;
   margin: 0 auto;
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
   font-family: 'Ubuntu', sans-serif;
   text-align: justify;
@@ -10,7 +15,52 @@
 
 section {
   margin-top: 30px;
-  background: #cccccc;
   padding: 20px;
 }
 
+.container {
+  margin: 0 auto;
+  width: 185px;
+  height: 265px;
+  text-align: center;
+  padding: 17px 10px 17px 10px;
+  border: 3.8px solid #fff;
+  border-radius: 10px;
+  background-color: #cccccc;
+}
+
+input {
+  padding: 13px 0 13px 0;
+  margin-bottom: 10px;
+  background-color: #f2f2f2;
+  border: none;
+  max-width: 169px;
+}
+
+div span {
+  display: inline-block;
+  width: 33.2px;
+  padding: 10px;
+  margin: 1px;
+  background: #fff;
+  border-radius: 3px;
+}
+
+div span:hover {
+  background: #cce5cc;
+  color: #fff;
+}
+
+.btn-restart {
+  background: #f37067;
+  color: #fff;
+}
+
+.btns-left {
+  margin-right: 58px;
+}
+
+input[type] {
+  color: #6666ff;
+  font-size: 24px;
+}
