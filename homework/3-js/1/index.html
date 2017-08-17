@@ -11,35 +11,35 @@
 
     <section>
       <div class="container">
-      <div class="demo">
-        <input type="text" name="submit">
-        <div>
-          <span>7</span>
-          <span>8</span>
-          <span>9</span>
-          <span>+</span>
+        <input type="text" name="total" id="total" readonly>
+        <div class="numbers">
+          <span id="btn7">7</span>
+          <span id="btn8">8</span>
+          <span id="btn9">9</span>
+          <span id="op-add">+</span>
         </div>
-        <div>
+        <div class="numbers">
           <span>4</span>
           <span>5</span>
           <span>6</span>
-          <span>-</span>
+          <span class="operators">-</span>
         </div>
-        <div>
+        <div class="numbers">
           <span>1</span>
           <span>2</span>
           <span>3</span>
-          <span>*</span>
+          <span class="operators">*</span>
         </div>
         <div>
           <span class="btn-clear">C</span>
-          <span>0</span>
-          <span class="btn-result">=</span>
+          <!-- kaip padaryti, kad galeciau ir 0 -->
+          <span class="numbers">0</span>
+          <span class="btn-result" id="op-result">=</span>
           <span>/</span>
         </div>
       </div>
     </section>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="script.js "></script>
+    <script type="text/javascript" src="scripts.js "></script>
   </body>
 </html>

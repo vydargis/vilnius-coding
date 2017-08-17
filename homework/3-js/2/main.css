@@ -16,13 +16,19 @@ section {
   text-align: center;
 }
 
-h2 {
-  color: #fff;
-  font-weight: bold;
-}
-
-.col-lg{
-  border: 1px solid #fff;
-  color: #fff;
-  font-weight: bold;
-}
+  #calendar{
+    border:1px solid black;
+    width:100%;
+    height: auto;
+  }
+  .week{
+    border:1px solid black;
+    height: 155px;
+  }
+  /*galima dienas inline elemetais pasidaryti*/
+  .day{
+    border:1px solid black;
+    width:150px;
+    height: 150px;
+    float: left;
+  }
