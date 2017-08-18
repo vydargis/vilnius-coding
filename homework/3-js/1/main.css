@@ -51,16 +51,16 @@ div span:hover {
   color: #fff;
 }
 
-.btn-result {
+#op-result {
   background: #b2b2ff; 
   color: #fff;
 }
 
-.btn-result:hover {
+#op-result:hover {
   background: #99cc99;
 }
 
-.btn-clear:hover {
+.clear:hover {
 	background: #f37067;
 }
 
