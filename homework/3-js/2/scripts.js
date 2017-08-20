@@ -1,8 +1,13 @@
-$(function() {
+$(function(){
+  var Renginys = "";
+  $.getJSON("json/data.json", function(data){
+    $.each(data, function(key, val){
+      Renginys += val;
+  });
+  $("#Renginys1").text();
+});
+});
 
-	
-//jei raŠome savo funkcijas, gali buti outside, funkcija nepaleidžiama kol neiškvieciama :)
-//kalendoriuje reikia weekday žinot, kad atspausdint
 function getfirstmonthdayweekday(){
   var date = new Date();
   var year = date.getFullYear();
@@ -11,85 +16,105 @@ function getfirstmonthdayweekday(){
   return currentmonhfstday.getDay();
 }
 
-  $(function(){
-    //console.log(GetLastDay)
-  });
-
-  function GetLastDay(){
-    var date = new Date();
-    var year = date.getFullYear();
-    var month = date.getMonth();
-    return new Date(year, month+1, 0).getDate();
-  }
-//console.log(GetLastDay());
-
-function GetMonthInLT(){
-var month=[
-      "Sausis",
-      "Vasaris",
-      "Kovas",
-      "Balandis",
-      "Geguže",
-      "Birželis",
-      "Liepa",
-      "Rugpjutis",
-      "Rugsejis",
-      "Spalis",
-      "Lapkritis",
-      "Gruodis"];
-
-var date = new Date();
-return month[date.getMonth()];//month tvarkingai nuo 0 iki 11
+function getdaysnr(currentDay){
+  var date = new Date();
+  var year = date.getFullYear();
+  var month = date.getMonth();
+  var day = date.getDay();
+  var daynrinweek = new Date(year, month, currentDay);
+  return daynrinweek.getDay();
 }
 
-//cikla daryti while, cikla dei amžina, while true ir i vidu for cikla
+function GetLastDay(){
+  var date = new Date();
+  var year = date.getFullYear();
+  var month = date.getMonth();
+  return new Date(year, month+1, 0).getDate();
+}
+
+function GetMonthInLT(){
+  var month=[
+    "Sausis",
+    "Vasaris",
+    "Kovas",
+    "Balandis",
+    "Gegužė",
+    "Birželis",
+    "Liepa",
+    "Rugpjūtis",
+    "Rugsėjis",
+    "Spalis",
+    "Lapkritis",
+    "Gruodis"];
+  var date = new Date();
+  return month[date.getMonth()];
+}
+
 $(function(){
   var currentweek = 1;
   var currentDay = 1;
   var printDays = false;
-var daysInCurrentmonth = GetLastDay();
+  var daynr = getdaysnr();
+  var daysInCurrentmonth = GetLastDay();
   var firstWeekDay = getfirstmonthdayweekday();
-  $("#month").html(GetMonthInLT());
+  $("#month").html(GetMonthInLT()).attr({class:"h1"});
 
-  while(true){
-    var week = $("<div></div>");
-    week.attr({class:"week"});
-    week.attr({id:"week"+currentweek});
+while(true){
+  var week = $("<div></div>");
+  week.attr({class:"week"});
+  week.attr({id:"week"+currentweek});
+  $("#calendar").append(week);
 
-    $("#calendar").append(week);
+for (var i = 1; i <= 7; i++) {
+  if(firstWeekDay == i){
+    printDays = true;
+  }
 
-    for (var i = 1; i <= 7; i++) {
-      if(firstWeekDay == i){
-        printDays = true;
-      }
-
-    if(currentDay>daysInCurrentmonth){
-      printDays = false;
-    }
-
-      if (printDays) {
-        var day = $("<div></div>");
-        day.attr({class:"day"});
-        day.attr({id:"day"+currentDay});
-        day.text(currentDay);
-        week.append(day);
-        currentDay++;
-      }else{
-        var day = $("<div></div>");
-        day.attr({class:"day"});
-        day.attr({id:"day"+currentDay});
-        day.text("");
-        week.append(day);
-      }
+if(currentDay>daysInCurrentmonth){
+  printDays = false;
 }
 
+  if (printDays){
+    var day = $("<div></div>");
+    day.attr({class:"day"});
+    day.attr({id:"day"+currentDay});
+    day.text(currentDay);
+    week.append(day);
+
+    if(getdaysnr(currentDay)==6||getdaysnr(currentDay)==0){
+      day.attr({class:"weekend"});
+    }
+    if(currentDay==4||currentDay==9||currentDay==19||currentDay==21){
+      day.attr({id:"event"+currentDay});
+      var renginys = $("<p></p>");
+      //renginys.text("Renginys");
+      switch(currentDay){
+        case 4:
+          renginys.text("Spetaklis");
+          break;
+        case 9:
+          renginys.text("Koncertas");
+          break;
+        case 19:
+          renginys.text("Konferencija");
+          break;
+        case 21:
+          renginys.text("Darbo balius");
+      }
+      day.append(renginys);
+    }
+    currentDay++;
+    }
+  else{
+    var day = $("<div></div>");
+    day.attr({class:"day"});
+    day.text("");
+    week.append(day);
+  }
+}
 if (currentweek == 5){
   break;
 }
-    currentweek++;
-  }
-});
-
-
-
+  currentweek++;
+}
 });
