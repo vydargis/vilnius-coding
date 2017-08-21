@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,700');
 
 html {
-  background: #ffefec;
+  background: #d8b2d8;
 }
 
 body {
@@ -9,7 +9,7 @@ body {
   margin: 0 auto;
   max-width: 100%;
   height: auto;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Dosis', sans-serif;
   text-align: justify;
 }
 
@@ -33,6 +33,7 @@ input {
   padding: 13px 0 13px 0;
   margin-bottom: 10px;
   background-color: #f2f2f2;
+  font-family: 'Dosis', sans-serif;
   border: none;
   max-width: 230px;
 }
@@ -66,6 +67,6 @@ div span:hover {
 
 input[type] {
   color: #6666ff;
-  font-size: 36px;
+  font-size: 30px;
   text-align: right;
 }
