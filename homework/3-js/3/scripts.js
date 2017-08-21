@@ -3,7 +3,7 @@
 $(function() {
 	$(".clean").click(function() {
 		$(".box").html("Thank you!");
-		$("#table, .container, h2").fadeOut(200, "linear");
+		$("#table, .container, h2").hide(200, "linear");
 
 	});
 
