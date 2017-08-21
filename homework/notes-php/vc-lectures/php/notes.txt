@@ -1,0 +1,10 @@
+Cookies
+* / - jei bus taip nurodyta, bus taikomi cookies visiems failams. 
+
+* /example - bus pasiektas tik tas failas
+
+* httponly - jei jis bus true, su Javascript negales jos pasiekti.
+
+* time() - jei nera nurodyta, cookies baigia galioti, kai uzdaromas narsykles laukas.
+
+* 
