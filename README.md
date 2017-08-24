@@ -3,5 +3,6 @@ Lecture slides and homework from Vilnius Coding school, 2017 August-September. M
 
 ## Useful links:
 * [PHP Standards Recommendations](http://www.php-fig.org/psr/)
+* [PHP & Laravel tutorials](https://laracasts.com/)
 
 
