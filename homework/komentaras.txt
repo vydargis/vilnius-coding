@@ -1,5 +1,5 @@
-// Atsizvelgsiu i pastabas. 
-
+﻿// Atsizvelgsiu i pastabas. 
+// Tikriausiai ne į visas pastabas.:) - Zigmantas
 ------
 1. Puikiai. Tik matau, kad html kaþkur generuotas, reikëtø iðimti stilius, nes tikslas dar nëra stiliai.
 2. Uþduoties pavyzdyje taip pat buvo naudojamas trumpinys DNR, kuriam reikëtø
@@ -12,3 +12,15 @@ naudoti <abbr> elementà. 2 paskaitos 6 skaidrëje rasite daugiau apie teksto se
 8. Puikiai
 9. Labai gerai. Uþduotyje praðoma buvo visos ðaðkiø lentos, o parodytas fragmentas. Bet OK.
 10. Puikiai
+11. Puikiai. Tik fono spalvos nereikėjo.
+12. Puikiai.
+13. Puikiai
+14. Puikiai
+15. Gerai. Bet nuorodų į javascript failus nereikia, nes nenaudojam.
+16. Bus gerai, tik gal užduotyje nepabrėžiau, kad jau darytos HTML užduotyse formą reikia stilizuoti.
+17. Bus gerai. Bet per sudėtingai darytas, galima ir paprasčiau, nenaudojant tiek daug prikabintų bibliotekų. Paprastas kalendorius, tačiau jis pasunkinamas milžiniškomis bibliotekomis.
+18. Puikiai
+19. Tarkim gerai, tik reikėjo ūgio ir svorio stulpelio. Materialize pritaikytas šauniai.
+20. Šita užduotis viena iš sunkesnių. JSON nuskaitymas panaudotas tačiau nepritaikytas kalendoriuj. Bet ir nesulaukiau klausimų apie tai. Įkelsiu kurso pabaigoje pavyzdį.
+21. Puikiai.
+22. Nebaigtas.
