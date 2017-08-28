@@ -128,7 +128,7 @@ Laravel applications folow the MVC architectual pattern:
 3. Views to render pages
 4. Routes are used to map URLs to designed controller actions
 
-### The full MVC request cycle in a Laravel 5 application
+## The full MVC request cycle in a Laravel 5 application
 
 <img src="http://laravelbook.com/images/laravel-architecture/laravel-mvc-components.png" alt="">
 
