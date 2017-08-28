@@ -54,8 +54,8 @@ You may write a web appication in PHP whose architecture is based on the MVC pat
 
 1) Describe basic classes for each part of the pattern:
 
-#### Model
-<pre>
+### Model
+```
 <?php
   class Model
   {
@@ -66,10 +66,10 @@ You may write a web appication in PHP whose architecture is based on the MVC pat
     }
   }
 ?>
-</pre>
+```
 
-#### View
-<pre>
+### View
+```
 <?php
   class View
   {
@@ -86,10 +86,10 @@ You may write a web appication in PHP whose architecture is based on the MVC pat
     }
   }
 ?>
-</pre>
+```
 
-#### Controller
-<pre>
+### Controller
+```
 <?php
   private $model;
 
@@ -101,10 +101,10 @@ You may write a web appication in PHP whose architecture is based on the MVC pat
     $this->model->string = "Updated Data!";
   }
 ?>
-</pre>
+```
 
 2) Set up the relationship between them:
-<pre>
+```
 <?php
   $model = new Model();
   $controller = new Controller($model);
@@ -116,7 +116,7 @@ You may write a web appication in PHP whose architecture is based on the MVC pat
 
   echo $view->output();
 ?>
-</pre>
+```
 
 ## Laravel & MVC
 
